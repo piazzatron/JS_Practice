@@ -1,0 +1,13 @@
+Mix in Backbone.Events into any object with _.extend
+	then you can call event methods on the object:
+		.on (used for binding a callback to an event)
+			convention is colons to namespace your events 'e.g. poll:start'
+			takes an optional third parameter, context for the callback
+			events:
+				"all"
+		.off (remove the binding)
+		.trigger (event, [*args]
+		.listenTo (listens to a particular event on another object)
+			context is always the object
+
+Render methods return a reference to the view for chaining purposes
